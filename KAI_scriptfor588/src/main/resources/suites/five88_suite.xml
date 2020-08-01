@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="five88_suite" parallel="methods" thread-count="1" data-provider-thread-count="1">
+    <parameter name="suite-name" value="five88_suite"/>
+
+    <test name="five88_test_other">
+        <groups>
+            <run>
+                <include name="OTHER_GRP"/>
+            </run>
+        </groups>
+
+        <classes>
+            <class name="com.five88.scripts.Five88Script"/>
+        </classes>
+    </test>
+
+    <test name="five88_test_register">
+        <groups>
+            <run>
+                <include name="REG_GRP"/>
+            </run>
+        </groups>
+
+        <classes>
+            <class name="com.five88.scripts.RegisterScript"/>
+        </classes>
+    </test>
+
+    <test name="five88_test_login">
+        <groups>
+            <run>
+                <include name="LOGIN_GRP"/>
+            </run>
+        </groups>
+
+        <classes>
+            <class name="com.five88.scripts.LoginScript"/>
+        </classes>
+    </test>
+
+<!--    <test name="five88_test_banking">-->
+<!--        <groups>-->
+<!--            <run>-->
+<!--                <include name="DEPOSIT_GRP"/>-->
+<!--            </run>-->
+<!--        </groups>-->
+
+<!--        <classes>-->
+<!--            <class name="com.five88.scripts.DepositScript"/>-->
+<!--        </classes>-->
+<!--    </test>-->
+
+    <test name="five88_test_sport">
+        <groups>
+            <run>
+                <include name="SPORT_GRP"/>
+            </run>
+        </groups>
+
+        <classes>
+            <class name="com.five88.scripts.SportScript"/>
+        </classes>
+    </test>
+
+    <test name="five88_test_lode">
+        <groups>
+            <run>
+                <include name="LODE_GRP"/>
+            </run>
+        </groups>
+
+        <classes>
+            <class name="com.five88.scripts.LodeScript"/>
+        </classes>
+    </test>
+
+    <test name="five88_test_casino">
+        <groups>
+            <run>
+                <include name="CASINO_GRP"/>
+            </run>
+        </groups>
+
+        <classes>
+            <class name="com.five88.scripts.CasinoScript"/>
+        </classes>
+    </test>
+
+    <test name="five88_test_keno">
+        <groups>
+            <run>
+                <include name="KENO_GRP"/>
+            </run>
+        </groups>
+
+        <classes>
+            <class name="com.five88.scripts.KenoScript"/>
+        </classes>
+    </test>
+
+</suite>

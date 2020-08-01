@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
+  <test thread-count="5" name="Default test(failed)">
+    <classes>
+      <class name="com.five88.scripts.LoginScript">
+        <methods>
+          <include name="tc_login_1"/>
+          <include name="tc_login_2"/>
+          <include name="tc_login_3"/>
+          <include name="tc_login_4"/>
+          <include name="tc_login_5"/>
+          <include name="tc_login_6"/>
+          <include name="tc_login_7"/>
+          <include name="tc_login_8"/>
+          <include name="terminal"/>
+          <include name="beforeTest"/>
+          <include name="termial"/>
+        </methods>
+      </class> <!-- com.five88.scripts.LoginScript -->
+    </classes>
+  </test> <!-- Default test(failed) -->
+</suite> <!-- Failed suite [Default suite] -->
